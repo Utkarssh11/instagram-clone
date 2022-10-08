@@ -1,4 +1,4 @@
 # instagram-clone
-Hello, Its instagram clone using HTML and CSS 
-
+Hello ,
+Today I created simple website using HTML/CSS .
 click here for a quick previwe of my project : https://utkarssh11.github.io/instagram-clone/
