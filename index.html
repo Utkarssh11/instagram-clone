@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Clone</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- icons link  -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="container d-flex justify-between">
+            <div class="logo">
+                <a href="">Instagram</a>
+            </div>
+
+            <div class="search-div">
+                <input type="search" name="q" placeholder="Search">
+            </div>
+
+            <div class="icons-div">
+                <ul class="d-flex">
+                    <li>
+                        <a href="#">
+                            <svg aria-label="Home" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img"
+                                viewBox="0 0 24 24" width="24">
+                                <path
+                                    d="M9.005 16.545a2.997 2.997 0 012.997-2.997h0A2.997 2.997 0 0115 16.545V22h7V11.543L12 2 2 11.543V22h7.005z"
+                                    fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg aria-label="Direct" class="_8-yf5 " color="#262626" fill="#262626" height="24"
+                                role="img" viewBox="0 0 24 24" width="24">
+                                <line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="22"
+                                    x2="9.218" y1="3" y2="10.083"></line>
+                                <polygon fill="none" points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334"
+                                    stroke="currentColor" stroke-linejoin="round" stroke-width="2"></polygon>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg aria-label="New Post" class="_8-yf5 " color="#262626" fill="#262626" height="24"
+                                role="img" viewBox="0 0 24 24" width="24">
+                                <path
+                                    d="M2 12v3.45c0 2.849.698 4.005 1.606 4.944.94.909 2.098 1.608 4.946 1.608h6.896c2.848 0 4.006-.7 4.946-1.608C21.302 19.455 22 18.3 22 15.45V8.552c0-2.849-.698-4.006-1.606-4.945C19.454 2.7 18.296 2 15.448 2H8.552c-2.848 0-4.006.699-4.946 1.607C2.698 4.547 2 5.703 2 8.552z"
+                                    fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2"></path>
+                                <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" x1="6.545" x2="17.455" y1="12.001" y2="12.001"></line>
+                                <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" x1="12.003" x2="12.003" y1="6.545" y2="17.455"></line>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg aria-label="Find People" class="_8-yf5 " color="#262626" fill="#262626" height="24"
+                                role="img" viewBox="0 0 24 24" width="24">
+                                <polygon fill="none"
+                                    points="13.941 13.953 7.581 16.424 10.06 10.056 16.42 7.585 13.941 13.953"
+                                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2"></polygon>
+                                <polygon fill-rule="evenodd"
+                                    points="10.06 10.056 13.949 13.945 7.581 16.424 10.06 10.056"></polygon>
+                                <circle cx="12.001" cy="12.005" fill="none" r="10.5" stroke="currentColor"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg aria-label="Activity Feed" class="_8-yf5 " color="#262626" fill="#262626" height="24"
+                                role="img" viewBox="0 0 24 24" width="24">
+                                <path
+                                    d="M16.792 3.904A4.989 4.989 0 0121.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 014.708-5.218 4.21 4.21 0 013.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 013.679-1.938m0-2a6.04 6.04 0 00-4.797 2.127 6.052 6.052 0 00-4.787-2.127A6.985 6.985 0 00.5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 003.518 3.018 2 2 0 002.174 0 45.263 45.263 0 003.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 00-6.708-7.218z">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="image/IMG_20220101_162103.jpg" alt="profile" class="profile">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Header Section -->
+
+    <header>
+        <div class="container grid grid-header">
+            <div class="user-profile-div d-flex justify-center">
+                <img src="image/IMG_20220101_162103.jpg" alt="user-profile" class="user-profile">
+            </div>
+
+            <div class="user-details">
+                <div class="user-name-div">
+                    <span class="username"><b>@_utkars_hh</b></span>
+                    <button class="btn msg-btn">Message</button>
+                    <button class="btn follow-btn">Follow</button>
+                    <button class="btn dropdown-btn">
+                        <span style="display: inline-block; transform: rotate(180deg);"><svg
+                                aria-label="Down Chevron Icon" class="_8-yf5 " color="#ffffff" fill="#ffffff"
+                                height="12" role="img" viewBox="0 0 24 24" width="12">
+                                <path
+                                    d="M21 17.502a.997.997 0 01-.707-.293L12 8.913l-8.293 8.296a1 1 0 11-1.414-1.414l9-9.004a1.03 1.03 0 011.414 0l9 9.004A1 1 0 0121 17.502z">
+                                </path>
+                            </svg></span>
+                    </button>
+                    <button class="btn dot-btn">...</button>
+                </div>
+
+                <div class="numbers">
+                    <span class="post">46 posts</span>
+                    <span class="follower">73k followers</span>
+                    <span class="following">373 following</span>
+                </div>
+
+                <div class="name-div">
+                    <span class="name"> UTKATSH PATIDAR<br>
+                    </span>
+                    <span class="name"> ᴍʏ ᴘᴀꜱꜱᴘᴏʀᴛ ɪꜱ ᴍʏ ᴄᴀᴍᴇʀᴀ
+                    </span>
+                </div>
+
+                <div class="light-div">
+                    <span class="light-name">Phone Photography</span>
+                </div>
+
+                <div class="bio-div">
+                    <p class="bio">
+                        Welcome🌼<br>
+                        Photography is the art or process of taking pictures using a camera.💝<br>
+                        There is one thing the photograph must contain, the humanity of the moment.💝<br>
+                        "God creates the beauty"💝<br>
+                        20🥀<br>
+                    </p>
+                </div>
+            </div>
+
+            <div class="container d-flex hr">
+                <a href="#">
+                    <div class="story-div">
+                        <div class="story-img">
+                            <img src="https://thumbs.dreamstime.com/b/single-letter-fire-flames-alphabet-black-background-238003248.jpg"
+                                alt="story" class="story">
+                        </div>
+                        <p class="story-title"><b>P</b></p>
+                    </div>
+                </a>
+
+
+                <a href="#">
+                    <div class="story-div">
+                        <div class="story-img">
+                            <img src="image/story/e (2).jpeg" alt="story" class="story">
+                        </div>
+                        <p class="story-title"><b>Y</b></p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="story-div">
+                        <div class="story-img">
+                            <img src="image/story/v.jpeg" alt="story" class="story">
+                        </div>
+                        <p class="story-title"><b>A</b></p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="story-div">
+                        <div class="story-img">
+                            <img src="image/story/e (1).jpeg" alt="story" class="story">
+                        </div>
+                        <p class="story-title"><b>R</b></p>
+                    </div>
+                </a>
+            </div>
+    </header>
+
+
+    <!-- Main Content Section -->
+
+    <section class="main-content">
+        <div class="container">
+            <div class="sub-nav d-flex justify-center">
+                <span>
+                    <svg aria-label="" class="_8-yf5 " color="#262626" fill="#262626" height="12" role="img"
+                        viewBox="0 0 24 24" width="12">
+                        <rect fill="none" height="18" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2" width="18" x="3" y="3"></rect>
+                        <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" x1="9.015" x2="9.015" y1="3" y2="21"></line>
+                        <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" x1="14.985" x2="14.985" y1="3" y2="21"></line>
+                        <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" x1="21" x2="3" y1="9.015" y2="9.015"></line>
+                        <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" x1="21" x2="3" y1="14.985" y2="14.985"></line>
+                    </svg>
+                    POSTS
+                </span>
+                <span>
+                    <svg aria-label="" class="_8-yf5 " color="#8e8e8e" fill="#8e8e8e" height="12" role="img"
+                        viewBox="0 0 24 24" width="12">
+                        <line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="2.049"
+                            x2="21.95" y1="7.002" y2="7.002"></line>
+                        <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" x1="13.504" x2="16.362" y1="2.001" y2="7.002"></line>
+                        <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" x1="7.207" x2="10.002" y1="2.11" y2="7.002"></line>
+                        <path
+                            d="M2 12.001v3.449c0 2.849.698 4.006 1.606 4.945.94.908 2.098 1.607 4.946 1.607h6.896c2.848 0 4.006-.699 4.946-1.607.908-.939 1.606-2.096 1.606-4.945V8.552c0-2.848-.698-4.006-1.606-4.945C19.454 2.699 18.296 2 15.448 2H8.552c-2.848 0-4.006.699-4.946 1.607C2.698 4.546 2 5.704 2 8.552z"
+                            fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2"></path>
+                        <path
+                            d="M9.763 17.664a.908.908 0 01-.454-.787V11.63a.909.909 0 011.364-.788l4.545 2.624a.909.909 0 010 1.575l-4.545 2.624a.91.91 0 01-.91 0z"
+                            fill-rule="evenodd"></path>
+                    </svg>
+                    REELS
+                </span>
+                <span>
+                    <svg aria-label="" class="_8-yf5 " color="#8e8e8e" fill="#8e8e8e" height="12" role="img"
+                        viewBox="0 0 24 24" width="12">
+                        <path
+                            d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zm0 22.5C6.2 22.5 1.5 17.8 1.5 12S6.2 1.5 12 1.5 22.5 6.2 22.5 12 17.8 22.5 12 22.5zm5-11.8l-6.8-3.9c-.5-.3-1-.3-1.5 0-.4.3-.7.7-.7 1.3v7.8c0 .5.3 1 .8 1.3.2.1.5.2.8.2s.5-.1.8-.2l6.8-3.9c.5-.3.8-.8.8-1.3s-.5-1-1-1.3zm-7.5 5.2V8.1l6.8 3.9-6.8 3.9z">
+                        </path>
+                    </svg>
+                    VIDEOS
+                </span>
+                <span>
+                    <svg aria-label="" class="_8-yf5 " color="#8e8e8e" fill="#8e8e8e" height="12" role="img"
+                        viewBox="0 0 24 24" width="12">
+                        <path
+                            d="M10.201 3.797L12 1.997l1.799 1.8a1.59 1.59 0 001.124.465h5.259A1.818 1.818 0 0122 6.08v14.104a1.818 1.818 0 01-1.818 1.818H3.818A1.818 1.818 0 012 20.184V6.08a1.818 1.818 0 011.818-1.818h5.26a1.59 1.59 0 001.123-.465z"
+                            fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2"></path>
+                        <path d="M18.598 22.002V21.4a3.949 3.949 0 00-3.948-3.949H9.495A3.949 3.949 0 005.546 21.4v.603"
+                            fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2"></path>
+                        <circle cx="12.072" cy="11.075" fill="none" r="3.556" stroke="currentColor"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle>
+                    </svg>
+                    TAGGED
+                </span>
+            </div>
+        </div>
+
+        <div class="container grid grid-main">
+
+            <div class="post-div">
+                <img src="image/post/post1.jpeg" alt="post" class="post">
+                <div class="layout">
+                    <span>
+                        <ion-icon name="heart" class="icon"></ion-icon> 1923
+                    </span>
+                    <span>
+                        <ion-icon name="chatbubbles" class="icon"></ion-icon> 22
+                    </span>
+                </div>
+            </div>
+
+            <div class="post-div">
+                <img src="image/post/post2.jpeg" alt="post" class="post">
+                <div class="layout">
+                    <span>
+                        <ion-icon name="heart" class="icon"></ion-icon> 1923
+                    </span>
+                    <span>
+                        <ion-icon name="chatbubbles" class="icon"></ion-icon> 29
+                    </span>
+                </div>
+            </div>
+
+            <div class="post-div">
+                <img src="image/post/post3.jpeg" alt="post" class="post">
+                <div class="layout">
+                    <span>
+                        <ion-icon name="heart" class="icon"></ion-icon> 104
+                    </span>
+                    <span>
+                        <ion-icon name="chatbubbles" class="icon"></ion-icon> 37
+                    </span>
+                </div>
+            </div>
+
+            <div class="post-div">
+                <img src="image/post/post4.jpeg" alt="post" class="post">
+                <div class="layout">
+                    <span>
+                        <ion-icon name="heart" class="icon"></ion-icon> 372
+                    </span>
+                    <span>
+                        <ion-icon name="chatbubbles" class="icon"></ion-icon> 2
+                    </span>
+                </div>
+            </div>
+
+            <div class="post-div">
+                <img src="image/post/post5.jpeg" alt="post" class="post">
+                <div class="layout">
+                    <span>
+                        <ion-icon name="heart" class="icon"></ion-icon> 1923
+                    </span>
+                    <span>
+                        <ion-icon name="chatbubbles" class="icon"></ion-icon> 37
+                    </span>
+                </div>
+            </div>
+
+            <div class="post-div">
+                <img src="image/post/post6.jpeg" alt="post" class="post">
+                <div class="layout">
+                    <span>
+                        <ion-icon name="heart" class="icon"></ion-icon> 104
+                    </span>
+                    <span>
+                        <ion-icon name="chatbubbles" class="icon"></ion-icon> 37
+                    </span>
+                </div>
+            </div>
+
+            <div class="post-div">
+                <img src="image/post/post7.jpeg" alt="post" class="post">
+                <div class="layout">
+                    <span>
+                        <ion-icon name="heart" class="icon"></ion-icon> 104
+                    </span>
+                    <span>
+                        <ion-icon name="chatbubbles" class="icon"></ion-icon> 37
+                    </span>
+                </div>
+            </div>
+
+            <div class="post-div">
+                <img src="image/post/post8.jpeg" alt="post" class="post">
+                <div class="layout">
+                    <span>
+                        <ion-icon name="heart" class="icon"></ion-icon> 1923
+                    </span>
+                    <span>
+                        <ion-icon name="chatbubbles" class="icon"></ion-icon> 37
+                    </span>
+                </div>
+            </div>
+
+            <div class="post-div">
+                <img src="image/post/post9.jpeg" alt="post" class="post">
+                <div class="layout">
+                    <span>
+                        <ion-icon name="heart" class="icon"></ion-icon> 104
+                    </span>
+                    <span>
+                        <ion-icon name="chatbubbles" class="icon"></ion-icon> 37
+                    </span>
+                </div>
+            </div>
+
+            <div class="post-div">
+                <img src="image/post/post10.jpeg" alt="post" class="post">
+                <div class="layout">
+                    <span>
+                        <ion-icon name="heart" class="icon"></ion-icon> 104
+                    </span>
+                    <span>
+                        <ion-icon name="chatbubbles" class="icon"></ion-icon> 37
+                    </span>
+                </div>
+            </div>
+
+            <div class="post-div">
+                <img src="image/post/post11.jpeg" alt="post" class="post">
+                <div class="layout">
+                    <span>
+                        <ion-icon name="heart" class="icon"></ion-icon> 1923
+                    </span>
+                    <span>
+                        <ion-icon name="chatbubbles" class="icon"></ion-icon> 37
+                    </span>
+                </div>
+            </div>
+
+            <div class="post-div">
+                <img src="image/post/post12.jpeg" alt="post" class="post">
+                <div class="layout">
+                    <span>
+                        <ion-icon name="heart" class="icon"></ion-icon> 1923
+                    </span>
+                    <span>
+                        <ion-icon name="chatbubbles" class="icon"></ion-icon> 37
+                    </span>
+                </div>
+            </div>
+
+            <div class="post-div">
+                <img src="image/post/post13.jpeg" alt="post" class="post">
+                <div class="layout">
+                    <span>
+                        <ion-icon name="heart" class="icon"></ion-icon> 1923
+                    </span>
+                    <span>
+                        <ion-icon name="chatbubbles" class="icon"></ion-icon> 37
+                    </span>
+                </div>
+            </div>
+
+            <div class="post-div">
+                <img src="image/post/post14.jpeg" alt="post" class="post">
+                <div class="layout">
+                    <span>
+                        <ion-icon name="heart" class="icon"></ion-icon> 1923
+                    </span>
+                    <span>
+                        <ion-icon name="chatbubbles" class="icon"></ion-icon> 37
+                    </span>
+                </div>
+            </div>
+
+            <div class="post-div">
+                <img src="image/post/post15.jpeg" alt="post" class="post">
+                <div class="layout">
+                    <span>
+                        <ion-icon name="heart" class="icon"></ion-icon> 1923
+                    </span>
+                    <span>
+                        <ion-icon name="chatbubbles" class="icon"></ion-icon> 37
+                    </span>
+                </div>
+            </div>
+
+            <div class="post-div">
+                <img src="image/post/post16.jpeg" alt="post" class="post">
+                <div class="layout">
+                    <span>
+                        <ion-icon name="heart" class="icon"></ion-icon> 1923
+                    </span>
+                    <span>
+                        <ion-icon name="chatbubbles" class="icon"></ion-icon> 37
+                    </span>
+                </div>
+            </div>
+
+            <div class="post-div">
+                <img src="image/post/post17.jpeg" alt="post" class="post">
+                <div class="layout">
+                    <span>
+                        <ion-icon name="heart" class="icon"></ion-icon> 1923
+                    </span>
+                    <span>
+                        <ion-icon name="chatbubbles" class="icon"></ion-icon> 37
+                    </span>
+                </div>
+            </div>
+
+
+            <div class="post-div">
+                <img src="image/post/post18.jpeg" alt="post" class="post">
+                <div class="layout">
+                    <span>
+                        <ion-icon name="heart" class="icon"></ion-icon> 1923
+                    </span>
+                    <span>
+                        <ion-icon name="chatbubbles" class="icon"></ion-icon> 37
+                    </span>
+                </div>
+            </div>
+
+            <div class="post-div">
+                <img src="image/post/post19.jpeg" alt="post" class="post">
+                <div class="layout">
+                    <span>
+                        <ion-icon name="heart" class="icon"></ion-icon> 1923
+                    </span>
+                    <span>
+                        <ion-icon name="chatbubbles" class="icon"></ion-icon> 37
+                    </span>
+                </div>
+            </div>
+
+            <div class="post-div">
+                <img src="image/post/post20.jpeg" alt="post" class="post">
+                <div class="layout">
+                    <span>
+                        <ion-icon name="heart" class="icon"></ion-icon> 1923
+                    </span>
+                    <span>
+                        <ion-icon name="chatbubbles" class="icon"></ion-icon> 76
+                    </span>
+                </div>
+            </div>
+
+            <div class="post-div">
+                <img src="image/post/post21 (1).jpeg" alt="post" class="post">
+                <div class="layout">
+                    <span>
+                        <ion-icon name="heart" class="icon"></ion-icon> 765
+                    </span>
+                    <span>
+                        <ion-icon name="chatbubbles" class="icon"></ion-icon> 76
+                    </span>
+                </div>
+            </div>
+
+            <div class="post-div">
+                <img src="image/post/post21 (2).jpeg" alt="post" class="post">
+                <div class="layout">
+                    <span>
+                        <ion-icon name="heart" class="icon"></ion-icon> 234
+                    </span>
+                    <span>
+                        <ion-icon name="chatbubbles" class="icon"></ion-icon> 98
+                    </span>
+                </div>
+            </div>
+
+            <div class="post-div">
+                <img src="image/post/post21 (3).jpeg" alt="post" class="post">
+                <div class="layout">
+                    <span>
+                        <ion-icon name="heart" class="icon"></ion-icon> 234
+                    </span>
+                    <span>
+                        <ion-icon name="chatbubbles" class="icon"></ion-icon> 75
+                    </span>
+                </div>
+            </div>
+
+            <div class="post-div">
+                <img src="image/post/post21 (4).jpeg" alt="post" class="post">
+                <div class="layout">
+                    <span>
+                        <ion-icon name="heart" class="icon"></ion-icon> 243
+                    </span>
+                    <span>
+                        <ion-icon name="chatbubbles" class="icon"></ion-icon> 87
+                    </span>
+                </div>
+            </div>
+
+            <div class="post-div">
+                <img src="image/post/post21 (5).jpeg" alt="post" class="post">
+                <div class="layout">
+                    <span>
+                        <ion-icon name="heart" class="icon"></ion-icon> 344
+                    </span>
+                    <span>
+                        <ion-icon name="chatbubbles" class="icon"></ion-icon> 54
+                    </span>
+                </div>
+            </div>
+
+            <div class="post-div">
+                <img src="image/post/post21 (6).jpeg" alt="post" class="post">
+                <div class="layout">
+                    <span>
+                        <ion-icon name="heart" class="icon"></ion-icon> 166
+                    </span>
+                    <span>
+                        <ion-icon name="chatbubbles" class="icon"></ion-icon> 76
+                    </span>
+                </div>
+            </div>
+
+            <div class="post-div">
+                <img src="image/post/post21 (7).jpeg" alt="post" class="post">
+                <div class="layout">
+                    <span>
+                        <ion-icon name="heart" class="icon"></ion-icon> 155
+                    </span>
+                    <span>
+                        <ion-icon name="chatbubbles" class="icon"></ion-icon> 38
+                    </span>
+                </div>
+            </div>
+
+            <div class="post-div">
+                <img src="image/post/post21 (8).jpeg" alt="post" class="post">
+                <div class="layout">
+                    <span>
+                        <ion-icon name="heart" class="icon"></ion-icon> 655
+                    </span>
+                    <span>
+                        <ion-icon name="chatbubbles" class="icon"></ion-icon> 87
+                    </span>
+                </div>
+            </div>
+
+            <div class="post-div">
+                <img src="image/post/post21 (9).jpeg" alt="post" class="post">
+                <div class="layout">
+                    <span>
+                        <ion-icon name="heart" class="icon"></ion-icon> 124
+                    </span>
+                    <span>
+                        <ion-icon name="chatbubbles" class="icon"></ion-icon> 37
+                    </span>
+                </div>
+            </div>
+
+            <div class="post-div">
+                <img src="image/post/post21 (10).jpeg" alt="post" class="post">
+                <div class="layout">
+                    <span>
+                        <ion-icon name="heart" class="icon"></ion-icon> 766
+                    </span>
+                    <span>
+                        <ion-icon name="chatbubbles" class="icon"></ion-icon> 31
+                    </span>
+                </div>
+            </div>
+
+
+            <div class="post-div">
+                <img src="image/post/post21 (11).jpeg" alt="post" class="post">
+                <div class="layout">
+                    <span>
+                        <ion-icon name="heart" class="icon"></ion-icon> 149
+                    </span>
+                    <span>
+                        <ion-icon name="chatbubbles" class="icon"></ion-icon> 87
+                    </span>
+                </div>
+            </div>
+
+
+            <div class="post-div">
+                <img src="image/post/post21 (12).jpeg" alt="post" class="post">
+                <div class="layout">
+                    <span>
+                        <ion-icon name="heart" class="icon"></ion-icon> 434
+                    </span>
+                    <span>
+                        <ion-icon name="chatbubbles" class="icon"></ion-icon> 92
+                    </span>
+                </div>
+            </div>
+
+            <div class="post-div">
+                <img src="image/post/post21 (13).jpeg" alt="post" class="post">
+                <div class="layout">
+                    <span>
+                        <ion-icon name="heart" class="icon"></ion-icon> 904
+                    </span>
+                    <span>
+                        <ion-icon name="chatbubbles" class="icon"></ion-icon> 97
+                    </span>
+                </div>
+            </div>
+
+            <div class="post-div">
+                <img src="image/post/post21 (14).jpeg" alt="post" class="post">
+                <div class="layout">
+                    <span>
+                        <ion-icon name="heart" class="icon"></ion-icon> 174
+                    </span>
+                    <span>
+                        <ion-icon name="chatbubbles" class="icon"></ion-icon> 39
+                    </span>
+                </div>
+            </div>
+
+            <div class="post-div">
+                <img src="image/post/post21 (15).jpeg" alt="post" class="post">
+                <div class="layout">
+                    <span>
+                        <ion-icon name="heart" class="icon"></ion-icon> 188
+                    </span>
+                    <span>
+                        <ion-icon name="chatbubbles" class="icon"></ion-icon> 97
+                    </span>
+                </div>
+            </div>
+
+            <div class="post-div">
+                <img src="image/post/post21 (16).jpeg" alt="post" class="post">
+                <div class="layout">
+                    <span>
+                        <ion-icon name="heart" class="icon"></ion-icon> 188
+                    </span>
+                    <span>
+                        <ion-icon name="chatbubbles" class="icon"></ion-icon> 37
+                    </span>
+                </div>
+            </div>
+
+
+            <div class="post-div">
+                <img src="image/post/post21 (17).jpeg" alt="post" class="post">
+                <div class="layout">
+                    <span>
+                        <ion-icon name="heart" class="icon"></ion-icon> 154
+                    </span>
+                    <span>
+                        <ion-icon name="chatbubbles" class="icon"></ion-icon> 27
+                    </span>
+                </div>
+            </div>
+
+            <div class="post-div">
+                <img src="image/post/post21 (18).jpeg" alt="post" class="post">
+                <div class="layout">
+                    <span>
+                        <ion-icon name="heart" class="icon"></ion-icon> 14
+                    </span>
+                    <span>
+                        <ion-icon name="chatbubbles" class="icon"></ion-icon> 3
+                    </span>
+                </div>
+            </div>
+
+            <div class="post-div">
+                <img src="image/post/post21 (19).jpeg" alt="post" class="post">
+                <div class="layout">
+                    <span>
+                        <ion-icon name="heart" class="icon"></ion-icon> 104
+                    </span>
+                    <span>
+                        <ion-icon name="chatbubbles" class="icon"></ion-icon> 37
+                    </span>
+                </div>
+            </div>
+
+            <div class="post-div">
+                <img src="image/post/post21 (20).jpeg" alt="post" class="post">
+                <div class="layout">
+                    <span>
+                        <ion-icon name="heart" class="icon"></ion-icon> 104
+                    </span>
+                    <span>
+                        <ion-icon name="chatbubbles" class="icon"></ion-icon> 37
+                    </span>
+                </div>
+            </div>
+
+
+            <div class="post-div">
+                <img src="image/post/post21 (21).jpeg" alt="post" class="post">
+                <div class="layout">
+                    <span>
+                        <ion-icon name="heart" class="icon"></ion-icon> 104
+                    </span>
+                    <span>
+                        <ion-icon name="chatbubbles" class="icon"></ion-icon> 37
+                    </span>
+                </div>
+            </div>
+
+
+            <div class="post-div">
+                <img src="image/post/post21 (22).jpeg" alt="post" class="post">
+                <div class="layout">
+                    <span>
+                        <ion-icon name="heart" class="icon"></ion-icon> 104
+                    </span>
+                    <span>
+                        <ion-icon name="chatbubbles" class="icon"></ion-icon> 37
+                    </span>
+                </div>
+            </div>
+
+
+            <div class="post-div">
+                <img src="image/post/post21 (23).jpeg" alt="post" class="post">
+                <div class="layout">
+                    <span>
+                        <ion-icon name="heart" class="icon"></ion-icon> 104
+                    </span>
+                    <span>
+                        <ion-icon name="chatbubbles" class="icon"></ion-icon> 37
+                    </span>
+                </div>
+            </div>
+
+
+            <div class="post-div">
+                <img src="image/post/post21 (24).jpeg" alt="post" class="post">
+                <div class="layout">
+                    <span>
+                        <ion-icon name="heart" class="icon"></ion-icon> 104
+                    </span>
+                    <span>
+                        <ion-icon name="chatbubbles" class="icon"></ion-icon> 37
+                    </span>
+                </div>
+            </div>
+
+
+            <div class="post-div">
+                <img src="image/post/post21 (25).jpeg" alt="post" class="post">
+                <div class="layout">
+                    <span>
+                        <ion-icon name="heart" class="icon"></ion-icon> 104
+                    </span>
+                    <span>
+                        <ion-icon name="chatbubbles" class="icon"></ion-icon> 37
+                    </span>
+                </div>
+            </div>
+
+
+            <div class="post-div">
+                <img src="image/post/post21 (26).jpeg" alt="post" class="post">
+                <div class="layout">
+                    <span>
+                        <ion-icon name="heart" class="icon"></ion-icon> 104
+                    </span>
+                    <span>
+                        <ion-icon name="chatbubbles" class="icon"></ion-icon> 37
+                    </span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+
+    <footer class="footer">
+        <div class="container d-flex justify-center">
+            <span class="footer-link">Meta</span>
+            <span class="footer-link">About</span>
+            <span class="footer-link">Instagram lite</span>
+            <span class="footer-link">Locations</span>
+            <span class="footer-link">Hashtags</span>
+            <span class="footer-link">API</span>
+        </div>
+
+        <p class="text-center">© 2022 Instagram from Meta</p>
+    </footer>
+</body>
+
+</html>
